@@ -4,6 +4,7 @@ import { initApp } from '@multiversx/sdk-dapp/out/methods/initApp/initApp';
 import { EnvironmentsEnum } from '@multiversx/sdk-dapp/out/types/enums.types';
 import App from './App';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import './index.css';
 
 const config = {
@@ -19,6 +20,7 @@ initApp(config).then(() => {
         <React.StrictMode>
             <App />
             <Analytics />
+            <SpeedInsights />
         </React.StrictMode>,
     );
 });
